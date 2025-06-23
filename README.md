@@ -11,19 +11,3 @@ Este projeto implementa um programa de quebra de senha por força bruta utilizan
 *   **Detecção de Senha Encontrada**: Uma vez que um processo encontra a senha, ele notifica os outros processos para que parem a busca, otimizando o tempo de execução.
 *   **Monitoramento de Progresso**: Exibe o progresso da busca para cada processo, bem como o tempo total de execução.
 *   **Configurável**: Permite fácil personalização da senha alvo, comprimento da senha e conjunto de caracteres.
-
-## Pré-requisitos
-
-Para compilar e executar este programa, você precisará de uma implementação MPI instalada em seu sistema. As mais comuns são:
-
-*   **Open MPI**
-*   **MPICH**
-
-Certifique-se de que o compilador `mpic++` esteja disponível em seu PATH.
-
-## Compilação
-
-Para compilar o código-fonte, navegue até o diretório onde o arquivo `quebra_senha_mpi.cpp` está salvo e execute o seguinte comando no terminal:
-
-```bash
-mpic++ -O2 -Wall -o quebra_senha quebra_senha_mpi.cpp
